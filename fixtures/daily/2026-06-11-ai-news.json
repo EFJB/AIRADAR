@@ -1,0 +1,80 @@
+{
+  "contract": {
+    "name": "ai-radar-daily-search",
+    "version": "1.0.0"
+  },
+  "generatedAt": "2026-06-11T15:22:15Z",
+  "query": {
+    "topic": "noticias recientes de inteligencia artificial",
+    "requestedCount": 5,
+    "language": "es",
+    "date": "2026-06-11"
+  },
+  "signals": [
+    {
+      "id": "signal-2026-06-11-uk-google-ai-search-opt-out",
+      "title": "Reino Unido ordena a Google permitir opt-out de AI Overviews",
+      "source": {
+        "publisher": "AP News",
+        "url": "https://apnews.com/article/google-britain-ai-competition-regulation-ce2016a4519fbe234799e009bac8f120",
+        "publishedAt": "2026-06-03"
+      },
+      "evidence": "La Competition and Markets Authority ordeno a Google dar a editores britanicos herramientas efectivas para excluir su contenido de AI Overviews, AI Mode y fine-tuning, con citas y enlaces claros.",
+      "impact": "El acceso a contenido para busqueda generativa y entrenamiento empieza a moverse hacia controles regulatorios explicitos, lo que puede cambiar costos de datos, atribucion y acuerdos con publishers.",
+      "action": "Monitorear si Google extiende controles similares fuera de Reino Unido y si otros reguladores imponen opt-outs separados para indexacion, generacion y entrenamiento.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-06-11-us-national-security-ai-memo",
+      "title": "Estados Unidos acelera adopcion de IA en seguridad nacional",
+      "source": {
+        "publisher": "The White House",
+        "url": "https://www.whitehouse.gov/presidential-actions/2026/06/national-security-presidential-memorandum-nspm-11/",
+        "publishedAt": "2026-06-05"
+      },
+      "evidence": "El memorando NSPM-11 ordena acelerar el uso de IA en la empresa de seguridad nacional, adaptar tecnologias comerciales y open source, asegurar sistemas confiables y evitar usos ilegales como vigilancia no autorizada.",
+      "impact": "Los proveedores de modelos, evaluacion, seguridad, compute y compliance pueden ver demanda directa de defensa e inteligencia, junto con mayores requisitos de gobernanza y assurance.",
+      "action": "Rastrear contratos, cambios en reglas de adquisicion, actualizaciones sobre armas autonomas y requisitos de evaluacion para proveedores de frontier models.",
+      "status": "alert"
+    },
+    {
+      "id": "signal-2026-06-11-anthropic-fable-mythos-5",
+      "title": "Anthropic lanza Claude Fable 5 y Mythos 5 con salvaguardas",
+      "source": {
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+        "publishedAt": "2026-06-09"
+      },
+      "evidence": "Anthropic presento modelos Mythos-class y dijo que Fable 5 tendra acceso por API y enterprise, con salvaguardas nuevas por riesgos en ciberseguridad y biologia.",
+      "impact": "La frontera de modelos utiles para coding, investigacion y tareas largas se combina con restricciones de seguridad mas visibles, lo que afecta evaluacion de herramientas, costos y casos dual-use.",
+      "action": "Probar Fable 5 contra benchmarks internos de coding y analisis, documentar falsos positivos de salvaguardas y seguir cambios de precio o disponibilidad despues del 22 de junio.",
+      "status": "new"
+    },
+    {
+      "id": "signal-2026-06-11-openai-lseg-enterprise-ai",
+      "title": "OpenAI reporta adopcion enterprise de IA en LSEG",
+      "source": {
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/lseg/",
+        "publishedAt": "2026-06-10"
+      },
+      "evidence": "OpenAI publico que LSEG usa ChatGPT y API para acelerar flujos de datos financieros, reduciendo ciclos de lanzamiento de producto de unos seis meses a unas dos semanas y despliegues de solicitudes de clientes a unas cuatro semanas.",
+      "impact": "La narrativa enterprise se esta moviendo de pilotos genericos a metricas operativas concretas en sectores regulados, especialmente datos financieros y decision support.",
+      "action": "Extraer metricas comparables para evaluar adopcion real: tiempo de release, tiempo a produccion, cobertura de usuarios, controles de datos y trazabilidad.",
+      "status": "pilot"
+    },
+    {
+      "id": "signal-2026-06-11-openai-economic-research-exchange",
+      "title": "OpenAI abre RFP para medir impacto economico de la IA",
+      "source": {
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/economic-research-exchange-request-for-proposals/",
+        "publishedAt": "2026-06-08"
+      },
+      "evidence": "OpenAI lanzo el Economic Research Exchange para financiar investigaciones sobre efectos de IA en trabajo, productividad, educacion, sector publico, innovacion, estructura de mercado y medicion de valor.",
+      "impact": "Los laboratorios estan tratando de convertir claims de productividad y desplazamiento laboral en evidencia empirica, con acceso controlado a datos de uso y colaboraciones externas.",
+      "action": "Crear una categoria de seguimiento para estudios economicos con campos de metodologia, datos usados, horizonte temporal, independencia y resultados reproducibles.",
+      "status": "watch"
+    }
+  ]
+}

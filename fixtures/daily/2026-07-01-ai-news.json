@@ -1,0 +1,106 @@
+{
+  "contract": {
+    "name": "ai-radar-daily-search",
+    "version": "1.0.0"
+  },
+  "generatedAt": "2026-07-01T21:04:15Z",
+  "query": {
+    "topic": "noticias recientes de inteligencia artificial; ventana semanal 2026-06-24 a 2026-07-01",
+    "requestedCount": 7,
+    "language": "es",
+    "date": "2026-07-01"
+  },
+  "signals": [
+    {
+      "id": "signal-2026-07-01-claude-sonnet-5",
+      "title": "Anthropic lanza Claude Sonnet 5 para agentes y trabajo profesional",
+      "source": {
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/news/claude-sonnet-5",
+        "publishedAt": "2026-06-30"
+      },
+      "evidence": "Anthropic anuncio Claude Sonnet 5 como modelo disponible en todos los planes, en Claude Code y en la plataforma API, con precio introductorio de 2 dolares por millon de tokens de entrada y 10 dolares por millon de salida hasta el 31 de agosto de 2026.",
+      "impact": "El lanzamiento mueve capacidades agenticas y de coding a un modelo mas barato y mas accesible, lo que puede cambiar la seleccion de modelos para agentes de produccion y flujos de desarrollo.",
+      "action": "Comparar Sonnet 5 contra el stack actual de AI Radar en tareas de busqueda, coding y resumen con distintos niveles de esfuerzo.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-07-01-claude-fable-mythos-redeployed",
+      "title": "Anthropic restaura acceso a Fable 5 y Mythos 5 tras controles de exportacion",
+      "source": {
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/news/redeploying-fable-5",
+        "publishedAt": "2026-06-30"
+      },
+      "evidence": "Anthropic dijo que los controles de exportacion sobre Fable 5 y Mythos 5 fueron levantados el 30 de junio, que Fable 5 estaria disponible globalmente el 1 de julio y que Mythos 5 fue restaurado para un conjunto de organizaciones de Estados Unidos.",
+      "impact": "La disponibilidad de modelos frontera queda condicionada por revision gubernamental, controles de acceso y clasificadores de seguridad, un precedente operativo para builders que dependen de APIs avanzadas.",
+      "action": "Monitorear cambios de acceso por region, nube y programa de verificacion antes de recomendar estos modelos en flujos criticos.",
+      "status": "alert"
+    },
+    {
+      "id": "signal-2026-07-01-claude-science-workbench",
+      "title": "Anthropic presenta Claude Science como workbench para investigacion",
+      "source": {
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+        "publishedAt": "2026-06-30"
+      },
+      "evidence": "Anthropic presento Claude Science como una app que integra herramientas y paquetes usados por investigadores, produce artefactos auditables y ofrece acceso flexible a computo.",
+      "impact": "La tendencia de IA vertical para ciencia pasa de modelos generales a entornos de trabajo completos con trazabilidad, computo y flujos reproducibles.",
+      "action": "Rastrear si aparecen integraciones, permisos y patrones de auditoria reutilizables para workflows cientificos o de datos en AI Radar.",
+      "status": "pilot"
+    },
+    {
+      "id": "signal-2026-07-01-google-tabfm",
+      "title": "Google introduce TabFM para prediccion zero-shot en datos tabulares",
+      "source": {
+        "publisher": "Google Research",
+        "url": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/",
+        "publishedAt": "2026-06-30"
+      },
+      "evidence": "Google Research anuncio TabFM, un modelo fundacional para clasificacion y regresion tabular que usa aprendizaje en contexto y esta disponible en Hugging Face y GitHub.",
+      "impact": "Si el rendimiento se sostiene, reduce la friccion de entrenar modelos especificos para tablas y acerca capacidades predictivas a analistas mediante BigQuery y comandos SQL.",
+      "action": "Probar TabFM con fixtures tabulares pequenos y comparar contra baselines simples antes de considerar integracion en pipelines de ranking.",
+      "status": "new"
+    },
+    {
+      "id": "signal-2026-07-01-gemini-nano-mtp-pixel",
+      "title": "Google acelera Gemini Nano en Pixel con Multi-Token Prediction",
+      "source": {
+        "publisher": "Google Research",
+        "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/",
+        "publishedAt": "2026-06-26"
+      },
+      "evidence": "Google Research describio una arquitectura que retrofita Multi-Token Prediction sobre modelos Gemini Nano v3 congelados y que ya se desplego en Pixel 9 y 10 para acelerar funciones como resumen de notificaciones y correccion de texto.",
+      "impact": "La mejora apunta a inferencia local mas rapida y eficiente sin entrenar modelos auxiliares por tarea, una senal fuerte para apps privadas y edge AI.",
+      "action": "Seguir metricas de latencia, energia y disponibilidad de APIs para evaluar si AI Radar debe separar senales de IA en nube versus on-device.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-07-01-meta-brain2qwerty-v2",
+      "title": "Meta publica Brain2Qwerty v2 para decodificacion cerebral no invasiva",
+      "source": {
+        "publisher": "Meta AI",
+        "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/",
+        "publishedAt": "2026-06-29"
+      },
+      "evidence": "Meta AI presento Brain2Qwerty v2 como una tuberia end-to-end de mayor rendimiento para decodificar oraciones en tiempo real desde registros cerebrales no invasivos.",
+      "impact": "Es una senal de avance en interfaces cerebro-computadora sin implantes, pero todavia requiere cautela por validacion clinica, privacidad neural y reproducibilidad.",
+      "action": "Mantener en watch y buscar papers, datasets o benchmarks independientes antes de elevarlo como senal aplicable para builders.",
+      "status": "watch"
+    },
+    {
+      "id": "signal-2026-07-01-glm-5-2-cyber-risk",
+      "title": "GLM-5.2 eleva preocupacion por modelos abiertos en ciberseguridad",
+      "source": {
+        "publisher": "Axios",
+        "url": "https://www.axios.com/2026/06/25/china-glm-52-open-source-hackers",
+        "publishedAt": "2026-06-25"
+      },
+      "evidence": "Axios reporto que GLM-5.2, modelo abierto de Z.ai, esta generando preocupaciones de seguridad porque puede descargarse, modificarse y usarse sin los controles de proveedores comerciales.",
+      "impact": "La disponibilidad de modelos abiertos fuertes para tareas agenticas y de vulnerabilidades cambia el balance entre acceso, defensa y abuso, especialmente para equipos de seguridad.",
+      "action": "Cruzar la cobertura secundaria con el blog, repositorio y pesos oficiales de Z.ai antes de clasificar el riesgo como confirmado.",
+      "status": "alert"
+    }
+  ]
+}

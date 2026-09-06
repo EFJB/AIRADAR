@@ -1,0 +1,171 @@
+{
+  "contract": {
+    "name": "ai-radar-daily-search",
+    "version": "1.0.0"
+  },
+  "generatedAt": "2026-06-18T16:53:31Z",
+  "query": {
+    "topic": "senales recientes de inteligencia artificial desde fuentes oficiales, repositorios tecnicos, comunidad y medios secundarios",
+    "requestedCount": 10,
+    "language": "es",
+    "date": "2026-06-18"
+  },
+  "signals": [
+    {
+      "id": "signal-2026-06-18-openai-deployment-simulation",
+      "title": "OpenAI usa simulacion de despliegue para evaluar modelos antes del lanzamiento",
+      "source": {
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/deployment-simulation/",
+        "publishedAt": "2026-06-16"
+      },
+      "evidence": "OpenAI presento Deployment Simulation, un metodo que reproduce conversaciones previas con modelos candidatos para estimar comportamientos no deseados antes de que lleguen a usuarios.",
+      "impact": "Las evaluaciones pre-release pueden acercarse a trafico representativo y cubrir mejor flujos agentic con herramientas, en vez de depender solo de prompts sinteticos.",
+      "action": "Probar un pipeline local de evaluacion con conversaciones anonimizadas, graders conocidos y metricas de comportamiento no deseado.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-06-18-google-agentic-resource-discovery",
+      "title": "Google publica la especificacion Agentic Resource Discovery",
+      "source": {
+        "publisher": "Google Developers Blog",
+        "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/",
+        "publishedAt": "2026-06-17"
+      },
+      "evidence": "Google anuncio ARD como una especificacion abierta para publicar, descubrir y verificar herramientas, skills, agentes, MCP servers y APIs mediante catalogos y registros.",
+      "impact": "El discovery de herramientas para agentes podria moverse hacia manifests verificables como ai-catalog.json, afectando marketplaces, MCP y seguridad de identidad de publishers.",
+      "action": "Crear un borrador de ai-catalog.json para herramientas internas y monitorear adopcion por Hugging Face, GitHub, Microsoft y otros participantes.",
+      "status": "new"
+    },
+    {
+      "id": "signal-2026-06-18-eu-ai-content-labeling-code",
+      "title": "La Comision Europea publica codigo para etiquetar contenido generado por IA",
+      "source": {
+        "publisher": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+        "publishedAt": "2026-06-10"
+      },
+      "evidence": "La Comision publico un codigo de practica para cumplir obligaciones de transparencia del AI Act sobre marcado y etiquetado de contenido generado o manipulado por IA.",
+      "impact": "Productos que generen, editen o distribuyan contenido sintetico necesitaran decisiones explicitas de disclosure, etiquetas, deteccion y experiencia de usuario antes del 2 de agosto de 2026.",
+      "action": "Mapear flujos de contenido generado por IA y definir politica de labels, metadatos y excepciones por caso de uso.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-06-18-nist-static-guardrails-limit",
+      "title": "NIST advierte que guardrails fijos no bastan contra prompts adaptativos",
+      "source": {
+        "publisher": "NIST",
+        "url": "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update",
+        "publishedAt": "2026-06-09"
+      },
+      "evidence": "NIST reporto una prueba matematica que muestra que un conjunto fijo de guardrails no es universalmente robusto contra prompts adversarios adaptativos.",
+      "impact": "La seguridad de LLMs y agentes requiere monitoreo continuo, red teaming recurrente y actualizaciones operativas, no solo filtros estaticos.",
+      "action": "Crear fixtures de prompts adversarios, medir bypasses y definir proceso de hotfix para politicas y controles.",
+      "status": "alert"
+    },
+    {
+      "id": "signal-2026-06-18-deepmind-ai-control-roadmap",
+      "title": "Google DeepMind publica roadmap de control para agentes autonomos",
+      "source": {
+        "publisher": "Google DeepMind",
+        "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+        "publishedAt": "2026-06-18"
+      },
+      "evidence": "DeepMind describio un AI Control Roadmap con defensa en profundidad, threat modeling de agentes como insider threats, supervisores de IA, deteccion, prevencion y respuesta.",
+      "impact": "Los agentes productivos empiezan a requerir controles de seguridad operacional: permisos graduales, sandboxing, monitoreo, bloqueo de acciones y tiempo de respuesta.",
+      "action": "Definir controles minimos para agentes internos: permisos por tarea, logging de acciones sensibles, kill switch y metricas de coverage, recall y time-to-response.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-06-18-glm-52-long-context-open-weights",
+      "title": "GLM-5.2 ofrece pesos abiertos y contexto de 1M tokens para tareas largas",
+      "source": {
+        "publisher": "Hugging Face",
+        "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+        "publishedAt": "2026-06-17"
+      },
+      "evidence": "Z.AI presento GLM-5.2 con licencia MIT, contexto de 1M tokens, foco en long-horizon coding y soporte en stacks como transformers, vLLM y SGLang.",
+      "impact": "Los builders pueden probar workflows de coding agents y analisis de repos completos con un modelo open-weight, aunque el costo de servirlo sigue siendo una restriccion.",
+      "action": "Evaluar GLM-5.2 en refactors multiarchivo, debugging con historiales largos y compararlo contra modelos cerrados en latencia, costo y precision.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-06-18-hugging-face-cli-agent-optimized",
+      "title": "Hugging Face optimiza su CLI para agentes de codigo",
+      "source": {
+        "publisher": "Hugging Face",
+        "url": "https://huggingface.co/blog/hf-cli-for-agents",
+        "publishedAt": "2026-06-04"
+      },
+      "evidence": "Hugging Face describio deteccion de agentes como Codex y Claude Code, salida especifica para agentes, flags como --json y --quiet, y hints para siguientes comandos.",
+      "impact": "Las CLIs empiezan a disenarse como interfaces para agentes, con salidas estructuradas y menor gasto de tokens en tareas multi-step.",
+      "action": "Usar esta senal como checklist para futuras CLIs de AI Radar: JSON estable, no truncamiento, quiet mode e instrucciones accionables de siguiente paso.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-06-18-cohere-north-mini-code",
+      "title": "Cohere libera North Mini Code para agentic software engineering",
+      "source": {
+        "publisher": "Cohere",
+        "url": "https://cohere.com/blog/north-mini-code",
+        "publishedAt": "2026-06-09"
+      },
+      "evidence": "Cohere lanzo North Mini Code, un modelo MoE de 30B parametros y 3B activos, bajo licencia Apache 2.0, optimizado para coding, terminal tasks y agentic software engineering.",
+      "impact": "Aumentan las opciones open-weight o self-hostable para agentes de codigo con menor activacion por token y posibles costos inferiores.",
+      "action": "Compararlo contra Qwen, Devstral y GLM en un harness propio con tareas reales de edicion y terminal.",
+      "status": "pilot"
+    },
+    {
+      "id": "signal-2026-06-18-supabase-agent-plugin",
+      "title": "Supabase empaqueta MCP y skills para coding agents",
+      "source": {
+        "publisher": "Supabase GitHub Discussions",
+        "url": "https://github.com/orgs/supabase/discussions/46689",
+        "publishedAt": "2026-06-11"
+      },
+      "evidence": "Supabase anuncio un plugin que agrupa su MCP server y agent skills para consultar bases, manejar migraciones, desplegar Edge Functions y aplicar buenas practicas.",
+      "impact": "Las plataformas empiezan a entregar infraestructura lista para agentes, reduciendo setup manual pero elevando la necesidad de permisos minimos y auditoria.",
+      "action": "Probar el plugin en un proyecto sandbox con permisos restringidos y revisar logs de SQL, migraciones y despliegues generados por agentes.",
+      "status": "new"
+    },
+    {
+      "id": "signal-2026-06-18-state-ai-regulation-patchwork",
+      "title": "Estados de EE. UU. avanzan con regulacion de IA aunque no haya norma federal uniforme",
+      "source": {
+        "publisher": "AP News",
+        "url": "https://apnews.com/article/23a0e44ab05402ddfe9cdfd0bffa0ade",
+        "publishedAt": "2026-06-14"
+      },
+      "evidence": "AP reporto que varios estados siguen aprobando leyes sobre chatbots infantiles, empleo, sesgo y decisiones automatizadas mientras el Congreso federal permanece estancado.",
+      "impact": "Startups y equipos pequenos pueden enfrentar cumplimiento fragmentado por jurisdiccion, especialmente en menores, empleo, credito, transparencia y auditorias.",
+      "action": "Crear checklist regulatorio por caso de uso y marcar senales por estado antes de lanzar features sensibles en EE. UU.",
+      "status": "active"
+    },
+    {
+      "id": "signal-2026-06-18-ai-memory-quality-risk",
+      "title": "Investigaciones reportan que la memoria persistente puede degradar respuestas de IA",
+      "source": {
+        "publisher": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/10/how-memory-tools-can-make-ai-models-worse/",
+        "publishedAt": "2026-06-10"
+      },
+      "evidence": "TechCrunch reporto investigaciones de Writer donde sistemas de memoria empujan modelos hacia preferencias, errores o premisas falsas del usuario y aumentan tendencias de sycophancy.",
+      "impact": "La personalizacion persistente puede empeorar exactitud y resistencia a informacion irrelevante si no se evalua como parte del sistema.",
+      "action": "Agregar pruebas de memoria con contradicciones, preferencias irrelevantes y datos falsos antes de activar memoria por defecto.",
+      "status": "watch"
+    },
+    {
+      "id": "signal-2026-06-18-chatgpt-share-fragmentation",
+      "title": "La cuota de ChatGPT cae por debajo de 50% en asistentes de IA segun Sensor Tower",
+      "source": {
+        "publisher": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/",
+        "publishedAt": "2026-06-16"
+      },
+      "evidence": "TechCrunch cito datos de Sensor Tower que ubican a ChatGPT en 46.4% de share al cierre de mayo, con Gemini en 27.7% y Claude en 10.3%.",
+      "impact": "El mercado de asistentes se fragmenta; prompts, integraciones y distribucion no deberian optimizarse solo para un proveedor dominante.",
+      "action": "Medir flujos multi-asistente y comparar conversion, retencion, costo y calidad por proveedor.",
+      "status": "watch"
+    }
+  ]
+}

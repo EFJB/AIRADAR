@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dashboard local de señales accionables de AI Radar." />
+    <title>AI Radar · Señales rankeadas</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#signals">Saltar al contenido principal</a>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="AI Radar, inicio">
+        <span class="radar-mark" aria-hidden="true"><i></i><i></i><b></b></span>
+        <span>AI Radar</span>
+      </a>
+      <span class="section-divider" aria-hidden="true"></span>
+      <h1>Señales rankeadas</h1>
+      <button class="toolbar-toggle" id="toolbar-toggle" type="button" aria-expanded="true" aria-controls="toolbar">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM11 17a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"></path></svg>
+        <span>Ocultar controles</span>
+      </button>
+      <div class="toolbar" id="toolbar" aria-label="Controles de señales">
+        <label class="search-control">
+          <span class="sr-only">Buscar señales</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <input id="search" type="search" placeholder="Buscar señales, evidencia, fuentes…" autocomplete="off" />
+        </label>
+        <label class="select-control">
+          <span class="sr-only">Fecha del snapshot</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M7 3v4M17 3v4M3 10h18"></path></svg>
+          <select id="date-select"><option value="2026-06-11">11 jun 2026</option></select>
+        </label>
+        <label class="select-control">
+          <span class="sr-only">Filtrar por fuente</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"></path></svg>
+          <select id="source-select"><option value="">Todas las fuentes</option></select>
+        </label>
+        <button class="filter-button" id="filter-button" type="button" aria-expanded="false" aria-controls="filter-panel">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9M13 7a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM11 17a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"></path></svg>
+          Filtros
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="filter-panel" id="filter-panel" hidden aria-label="Filtros de estado">
+        <fieldset>
+          <legend>Estado de la señal</legend>
+          <label><input type="checkbox" value="alert" checked /> Alerta</label>
+          <label><input type="checkbox" value="new" checked /> Nueva</label>
+          <label><input type="checkbox" value="active" checked /> Activa</label>
+          <label><input type="checkbox" value="pilot" checked /> Piloto</label>
+          <label><input type="checkbox" value="watch" checked /> Seguimiento</label>
+        </fieldset>
+      </section>
+
+      <section class="data-note" aria-label="Origen de datos">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span><strong>Fixture local declarado:</strong> snapshot normalizado del 11 de junio de 2026.</span>
+        <a href="/fixtures/daily/2026-06-11-ai-news.json">Ver contrato de datos</a>
+      </section>
+
+      <section id="signals" aria-labelledby="signals-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">Radar diario</p><h2 id="signals-heading">Prioridades para builders</h2></div>
+          <p id="result-summary" aria-live="polite"></p>
+        </div>
+        <div id="loading-state" class="state-card" aria-live="polite"><span class="spinner" aria-hidden="true"></span> Cargando señales verificadas…</div>
+        <div id="error-state" class="state-card state-error" hidden role="alert"><p>No se pudieron cargar las señales locales.</p><button id="retry-button" type="button">Reintentar</button></div>
+        <div id="empty-state" class="state-card" hidden><h3>No hay señales que coincidan</h3><p>Prueba a borrar la búsqueda o a habilitar más estados.</p><button id="clear-button" type="button">Limpiar filtros</button></div>
+        <ol id="signal-list" class="signal-list" aria-label="Señales rankeadas"></ol>
+      </section>
+    </main>
+
+    <footer class="metrics-bar" aria-label="Resumen del dashboard">
+      <p><span class="status-dot" aria-hidden="true"></span> Actualizado desde fixture</p>
+      <dl><div><dt id="metric-total">0</dt><dd>Señales visibles</dd></div><div><dt id="metric-high">0</dt><dd>Alta prioridad</dd></div><div><dt id="metric-alerts">0</dt><dd>Alertas</dd></div><div><dt id="metric-sources">0</dt><dd>Fuentes</dd></div><div><dt>100%</dt><dd>Datos declarados</dd></div></dl>
+      <p id="fixture-date">Snapshot local</p>
+    </footer>
+    <script type="module" src="/public/app.js"></script>
+  </body>
+</html>
